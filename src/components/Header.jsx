@@ -18,7 +18,7 @@ function Header() {
       {/* Logo */}
       <img
         className={"mb-[1rem] ml-[1.5rem]"}
-        src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/null/external-music-player-electronics-xnimrodx-lineal-color-xnimrodx.png"
+        src="https://img.icons8.com/ios-filled/50/null/listening-to-music-on-headphones.png"
         alt=""
       />{" "}
       {/* Side Menu */}

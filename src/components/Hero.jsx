@@ -34,7 +34,7 @@ function Hero() {
         </div>
       </div>
       {/* right side */}
-      <div className="images   ">
+      <div className="image ">
         <img
           className=" mb-[3rem]  h-[500px] w-[300px] mr-[8rem] rotate-[-17deg] mt-[70px] "
           src="https://res.cloudinary.com/dirtkkfqn/image/upload/v1667849592/fgh_wp0pxn.jpg"

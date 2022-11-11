@@ -1,37 +1,39 @@
-import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import MobileStepper from '@mui/material/MobileStepper';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
+import * as React from "react";
+import { useTheme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import MobileStepper from "@mui/material/MobileStepper";
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
+import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
+import SwipeableViews from "react-swipeable-views";
+import { autoPlay } from "react-swipeable-views-utils";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
+
+
 const images = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
+    label: "Tam sana göre bir liste 🙃",
     imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+      "https://res.cloudinary.com/dirtkkfqn/image/upload/v1668200148/1_qgcxon.png",
   },
   {
-    label: 'Bird',
+    label: "Moduna göre 🤘🎧",
     imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+      "https://res.cloudinary.com/dirtkkfqn/image/upload/v1668200148/4_k5ugcs.png",
   },
   {
-    label: 'Bali, Indonesia',
+    label: "Gününü güzelleştir 🌸",
     imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
+      "https://res.cloudinary.com/dirtkkfqn/image/upload/v1668200148/2_idvnwm.png",
   },
   {
-    label: 'Goč, Serbia',
+    label: "Mutlu muyuz 💃🏽🕺🏽",
     imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+      "https://res.cloudinary.com/dirtkkfqn/image/upload/v1668200148/5_hfwsiv.png",
   },
 ];
 
@@ -53,22 +55,22 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-    <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+    <Box sx={{ maxWidth: 600, flexGrow: 1 }}>
       <Paper
         square
         elevation={0}
         sx={{
-          display: 'flex',
-          alignItems: 'center',
+          display: "flex",
+          alignItems: "center",
           height: 50,
           pl: 2,
-          bgcolor: 'background.default',
+          bgcolor: "background.default",
         }}
       >
         <Typography>{images[activeStep].label}</Typography>
       </Paper>
       <AutoPlaySwipeableViews
-        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={activeStep}
         onChangeIndex={handleStepChange}
         enableMouseEvents
@@ -79,11 +81,11 @@ function SwipeableTextMobileStepper() {
               <Box
                 component="img"
                 sx={{
-                  height: 255,
-                  display: 'block',
-                  maxWidth: 400,
-                  overflow: 'hidden',
-                  width: '100%',
+                  height: 500,
+                  display: "block",
+                  maxWidth: 450,
+                  overflow: "hidden",
+                  width: "100%",
                 }}
                 src={step.imgPath}
                 alt={step.label}
@@ -102,8 +104,8 @@ function SwipeableTextMobileStepper() {
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
           >
-            Next
-            {theme.direction === 'rtl' ? (
+            Sonraki
+            {theme.direction === "rtl" ? (
               <KeyboardArrowLeft />
             ) : (
               <KeyboardArrowRight />
@@ -112,12 +114,12 @@ function SwipeableTextMobileStepper() {
         }
         backButton={
           <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-            {theme.direction === 'rtl' ? (
+            {theme.direction === "rtl" ? (
               <KeyboardArrowRight />
             ) : (
               <KeyboardArrowLeft />
             )}
-            Back
+            Önceki
           </Button>
         }
       />

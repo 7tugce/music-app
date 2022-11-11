@@ -1,7 +1,7 @@
 import React from "react";
 function MusicPlayer() {
   return (
-    <div className="musicPlayer flex flex-col px-5  border-2 bg-gradient-to-bl from-[#C9BBCF] to-[#B7D3DF]  py-3 rounded-xl mt-5 ">
+    <div className="musicPlayer flex flex-col px-5  border-2 bg-gradient-to-bl from-[#C9BBCF] to-[#B7D3DF]  py-3 rounded-xl mt-5 w-[400px] h-[150px]">
       {/*upper part */}
      
       <div className="upperPart flex items-center justify-between ">
