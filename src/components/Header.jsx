@@ -3,20 +3,22 @@ import CenterMenu from "./CenterMenu";
 
 function Header() {
   const buttonStyle =
-    " border-[2px] text-[1rem] rounded-[10px] border-[#584153] px-[25px] py-[7px] mr-[2rem] mb-[1rem] ";
+    "  text-[1rem] rounded-[10px] border-[1px] px-[25px] py-[7px] mr-[2rem] mb-[1rem] ";
   return (
     <div
-      className="header bg-[#AF8BAF] 
+      className="header bg-gradient-to-bl from-[white] to-[#AF8BAF] 
   flex items-center 
+  
   justify-between px-[5rem]
-  pt-[2.2rem]
+  pt-[2rem]
   rounded-b-[5rem]
+  text-[1.3rem]
   "
     >
       {/* Logo */}
       <img
-        className={"mb-[1.5rem] ml-[1.5rem]"}
-        src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/100/null/external-music-player-electronics-xnimrodx-lineal-color-xnimrodx.png"
+        className={"mb-[1rem] ml-[1.5rem]"}
+        src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/null/external-music-player-electronics-xnimrodx-lineal-color-xnimrodx.png"
         alt=""
       />{" "}
       {/* Side Menu */}

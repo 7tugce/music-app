@@ -1,7 +1,12 @@
 import React from "react";
 
 function Feature({ icon, title }) {
+
+
+
+
   return (
+   
     <div className="feature text-[1rem] flex items-center justify-center flex-col relative text-center mx-12 ">
       {/* icon */}
 

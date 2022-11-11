@@ -1,5 +1,6 @@
 import React from "react";
 import Feature from "./Feature";
+import { motion } from "framer-motion";
 function Experience() {
   return (
     <div className="experience flex flex-col items-center justify-start px-[5rem]  h-[60rem] pt-[18rem] mt-[-10rem] relative z-[1] ">
@@ -14,9 +15,24 @@ function Experience() {
       </div>
       {/* features  */}
       <div className="feature flex items-stretch justify-around mt-[6rem] w-[100%] z-[2] ">
-       <Feature icon={<img src="https://img.icons8.com/nolan/96/microphone.png"/>} title= "Canlı müzik" />
-       <Feature icon={<img src="https://img.icons8.com/nolan/96/headphones.png"/>} title= "Günlük müzik ihtiyacınız" />
-       <Feature icon={<img src="https://img.icons8.com/nolan/96/james-brown.png"/>} title= "Sanatçılar için" />
+        <Feature
+          icon={
+            <img src="https://img.icons8.com/nolan/96/microphone.png" alt="" />
+          }
+          title="Canlı müzik"
+        />
+        <Feature
+          icon={
+            <img src="https://img.icons8.com/nolan/96/headphones.png" alt="" />
+          }
+          title="Günlük müzik ihtiyacınız"
+        />
+        <Feature
+          icon={
+            <img src="https://img.icons8.com/nolan/96/james-brown.png" alt="" />
+          }
+          title="Sanatçılar için"
+        />
       </div>
     </div>
   );
