@@ -3,7 +3,7 @@ import CenterMenu from "./CenterMenu";
 
 function Header() {
   const buttonStyle =
-    "  text-[1rem] rounded-[10px] border-[1px] px-[25px] py-[7px] mr-[2rem] mb-[1rem] ";
+    "  text-[1rem] relative rounded-[10px] border-[1px] px-[25px] py-[7px] mr-[2rem] mb-[1rem] ";
   return (
     <div
       className="header bg-gradient-to-bl from-[white] to-[#AF8BAF] 
@@ -24,11 +24,19 @@ function Header() {
       {/* Side Menu */}
       <CenterMenu />
       {/* Buttons */}
+
+      
       <div className="buttons flex">
-        <button className={`mr-[35px] hover:bg-[#ECC5FB] ` + buttonStyle}>
-          Giriş Yap
+        <button
+        
+          className={`mr-[35px] hover:bg-[#ECC5FB] ` + buttonStyle}
+        >
+          Giriş Yap 
         </button>
-        <button className={` bg-[#ECC5FB] ` + buttonStyle}>Kayıt Ol</button>
+        <button 
+        className={` bg-[#ECC5FB] ` + buttonStyle}>
+          Kayıt Ol
+        </button>
       </div>
     </div>
   );

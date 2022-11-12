@@ -1,6 +1,5 @@
 import React from "react";
 import Feature from "./Feature";
-import { motion } from "framer-motion";
 function Experience() {
   return (
     <div className="experience flex flex-col items-center justify-start px-[5rem]  h-[60rem] pt-[18rem] mt-[-10rem] relative z-[1] ">

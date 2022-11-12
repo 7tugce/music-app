@@ -3,7 +3,7 @@ import React from "react";
 function CenterMenu() {
     const liStyle = "mr-[3rem] hover:cursor-pointer mb-[1.5rem]"
   return (
-    <div className="menu flex">
+    <div className="menu ">
       <ul className="flex w-[100%] justify-between">
         <li className={liStyle}>Anasayfa</li>
         <li className={liStyle}>Hakkımızda</li>
