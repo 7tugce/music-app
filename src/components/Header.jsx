@@ -1,7 +1,14 @@
 import React from "react";
 import CenterMenu from "./CenterMenu";
+import { BrowserRouter, Link, Navigate, NavLink} from "react-router-dom";
+import SignIn from "../pages/SignIn";
+import SignUp from "../pages/SignUp";
+import Router from "../config/router";
 
 function Header() {
+
+
+
   const buttonStyle =
     "  text-[1rem] relative rounded-[10px] border-[1px] px-[25px] py-[7px] mr-[2rem] mb-[1rem] ";
   return (
@@ -27,16 +34,23 @@ function Header() {
 
       
       <div className="buttons flex">
-        <button
-        
-          className={`mr-[35px] hover:bg-[#ECC5FB] ` + buttonStyle}
-        >
-          Giriş Yap 
-        </button>
-        <button 
-        className={` bg-[#ECC5FB] ` + buttonStyle}>
-          Kayıt Ol
-        </button>
+        {" "}
+        <BrowserRouter>
+          <NavLink to="/sign-in">
+          
+            <button 
+            onClick={<SignIn/>}
+            className={`mr-[35px] hover:bg-[#ECC5FB] ` + buttonStyle}>
+              Giriş Yap 
+            </button>
+          </NavLink>
+
+          <NavLink to="/sign-up">
+            <button 
+           onClick={<SignUp/>}
+             className={` bg-[#ECC5FB] ` + buttonStyle}>Kayıt Ol</button>
+          </NavLink>
+        </BrowserRouter>
       </div>
     </div>
   );

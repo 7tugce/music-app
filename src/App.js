@@ -10,9 +10,10 @@ import Search from "./components/Search";
 import { signUp ,signIn } from "./config/firebase";
 
 function App() {
-<Router />
+
   return (
     <div className="App text-[#584153] overflow-hidden">
+     
       <Header />
       <Hero />
       <Experience />
