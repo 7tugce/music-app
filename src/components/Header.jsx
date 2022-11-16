@@ -3,12 +3,11 @@ import CenterMenu from "./CenterMenu";
 
 function Header() {
   const buttonStyle =
-    "  text-[1rem] relative rounded-[10px] border-[1px] px-[25px] py-[7px] mr-[2rem] mb-[1rem] ";
+    "text-[1rem] relative rounded-[10px] border-[1px] px-[25px] py-[7px] mr-[2rem] mb-[1rem] ";
   return (
     <div
       className="header bg-gradient-to-bl from-[white] to-[#AF8BAF] 
   flex items-center 
-  
   justify-between px-[5rem]
   pt-[2rem]
   rounded-b-[5rem]

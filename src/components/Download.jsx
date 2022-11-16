@@ -23,6 +23,7 @@ function Download(){
           <div className="mt-14">
             <DownloadAds/>
           </div>
+          
         </div>
       );
 }

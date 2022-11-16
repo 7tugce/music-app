@@ -18,6 +18,7 @@ function Search() {
             placeholder="Nasıl yardımcı olabiliriz? "
             className="flex-[19] outline-none bg-gradient-to-bl from-[#EBC7E8] to-[#BFACE0] text-[1rem] rounded-xl p-3 h-[3rem] w-[700px]"
           ></input>
+          
         </div>
 
         <div className="detail items-center flex flex-col mt-[50px] mb-[50px] text-[2.7rem]">
